@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Append table</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .trStyle {
+        border: 1px solid #eab20c;
+        padding: 15px 105px 15px 10px;
+        background-color: #392c69;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Append table</h2>
+    <main>
+      <div>
+        <input type="text" placeholder="vardas" id="name" />
+        <button type="submit" onclick="addData()">Pridėti</button>
+      </div>
+      <div>
+        <input type="text" placeholder="pavardė" id="surname" />
+        <button onclick="removeFirstRow()">Ištrinti pirmą</button>
+      </div>
+      <div>
+        <input type="text" placeholder="amžius" id="age" />
+
+        <button onclick="removeLastRow()">Ištrinti paskutinę</button>
+      </div>
+    </main>
+    <table id="myTable">
+      <tr>
+        <th>Vardas</th>
+        <th>Pavardė</th>
+        <th>Amžius</th>
+      </tr>
+      <tr id="row">
+        <td>Jonas</td>
+        <td>Rimkus</td>
+        <td>54</td>
+      </tr>
+      <trid="row">
+        <td>Vestina</td>
+        <td>Petronytė</td>
+        <td>31</td>
+      </tr>
+      <tr id="row">
+        <td>Marius</td>
+        <td>Dulinskas</td>
+        <td>23</td>
+      </tr>
+    </table>
+
+  
+
+    <script src="script.js"></script>
+  </body>
+</html>
